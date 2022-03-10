@@ -35,6 +35,19 @@ class LoginRequest extends FormRequest
     }
 
     /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'username.required' => 'Harap Masukan Username',
+            'password.required' => 'Harap Masukan Password',
+        ];
+    }
+
+    /**
      * Attempt to authenticate the request's credentials.
      *
      * @return void
