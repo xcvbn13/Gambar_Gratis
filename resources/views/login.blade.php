@@ -73,7 +73,7 @@
                             <!-- <p class="text-xs italic text-red-500">Please choose a password.</p> -->
                         </div>
                         <div class="mb-4">
-                            <input class="form-checkbox h-4 w-4 mr-2 text-blue-600 rounded" name="remember" type="checkbox" id="checkbox_id" />
+                            <input class="form-checkbox h-4 w-4 mr-1 text-blue-600 rounded" name="remember" type="checkbox" id="checkbox_id" />
                             <label class="text-sm" for="checkbox_id">
                                 Remember Me
                             </label>

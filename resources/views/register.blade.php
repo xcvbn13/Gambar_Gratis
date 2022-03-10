@@ -12,14 +12,11 @@
                 <!-- Col -->
                 <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
                 <h3 class="pt-4 text-2xl text-center">Welcome to <span class="uppercase" style="font-family: 'Roboto', sans-serif;color: rgb(59 130 246);">Gambar Gratis</span></h3>
-
-                    <!-- Session Status -->
-                    <x-auth-session-status class="mb-4" :status="session('status')" />
                     
                     <!-- Validation Errors -->
                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-                    <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded" method="POST" action="{{ route('login') }}">
+                    <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded" method="POST" action="{{ route('register') }}">
                         @csrf
 
                         <!-- nama  -->
@@ -29,10 +26,10 @@
                             </label>
                             <x-input
                                 class="block w-full"
-                                id="nama"
+                                id="name"
                                 type="text"
-                                name="nama" 
-                                :value="old('nama')" 
+                                name="name" 
+                                :value="old('name')" 
                                 required 
                                 autofocus
                             />
